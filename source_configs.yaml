@@ -1,0 +1,114 @@
+# Конфигурация универсальных парсеров
+# Каждый источник имеет свои правила парсинга CSS-селекторов
+
+sources:
+  # Telegram каналы (общие настройки)
+  telegram:
+    # Парсинг Telegram через веб-интерфейс
+    base_url: "https://t.me/s/"
+    type: "telegram"
+    # Селекторы для извлечения постов
+    post_selector: ".tgme_widget_message"
+    content_selector: ".tgme_widget_message_text"
+    time_selector: ".tgme_widget_message_time"
+    date_selector: ".tgme_widget_message_date"
+    
+  # Венеасо Бали
+  venasobali:
+    name: "Venaso Bali"
+    url: "https://venasobali.com.au/"
+    type: "website"
+    parsing_rules:
+      # Основной контейнер события
+      event_selector: "article, .post, .entry, div[class*='card'], div[class*='item'], div[class*='property']"
+      
+      # Селекторы для извлечения полей
+      title_selector: "h1, h2, h3, h4, .title, .post-title, .entry-title, [class*='title']"
+      date_selector: "time, .date, .post-date, .entry-date, [class*='date']"
+      location_selector: ".location, .venue, .place, .address, [class*='location']"
+      description_selector: ".excerpt, .summary, .entry-content, p, [class*='desc']"
+      price_selector: ".price, .amount, .cost, [class*='price']"
+      link_selector: "a[href]"
+      
+      # Дополнительные настройки
+      date_format: "DD-MM-YYYY"
+      default_location: "Bali, Indonesia"
+  
+  # PP Бали
+  ppbali:
+    name: "PP Bali"
+    url: "https://ppbali.com/"
+    type: "website"
+    parsing_rules:
+      event_selector: "article, .post, .property-item, .listing-item, .card, div[class*='property'], div[class*='listing']"
+      title_selector: "h1, h2, h3, h4, .title, .property-title, .listing-title"
+      date_selector: "time, .date, .post-date, .property-date, [class*='date']"
+      location_selector: ".location, .address, .area, [class*='location']"
+      description_selector: ".excerpt, .summary, .property-description, .listing-description"
+      price_selector: ".price, .amount, .value, [class*='price']"
+      link_selector: "a[href]"
+      date_format: "DD-MM-YYYY"
+      default_location: "Bali, Indonesia"
+  
+  # Общие настройки для всех вебсайтов
+  default_website:
+    type: "website"
+    parsing_rules:
+      event_selector: "article, .post, .card, .item, .entry"
+      title_selector: "h1, h2, h3, h4, .title, [class*='title']"
+      date_selector: "time, .date, [class*='date']"
+      location_selector: ".location, .place, .venue, .address, [class*='location']"
+      description_selector: ".excerpt, .summary, .content, p, [class*='desc']"
+      price_selector: ".price, .cost, .amount, [class*='price']"
+      link_selector: "a[href]"
+      date_format: "auto"
+      default_location: "Bali, Indonesia"
+
+# Настройки фильтрации по ТЗ
+filters:
+  # Фильтр по гео (районы Бали)
+  geo_filter:
+    allowed_locations:
+      - "bali"
+      - "denpasar"
+      - "canggu"
+      - "ubud"
+      - "seminyak"
+      - "sanur"
+      - "kuta"
+      - "jimbaran"
+      - "uluwatu"
+      - "nusa dua"
+      - "bukit"
+  
+  # Фильтр по категориям недвижимости (по ТЗ)
+  category_filter:
+    allowed_categories:
+      - "property"
+      - "real estate"
+      - "investment"
+      - "development"
+    
+  # Языковой фильтр
+  language_filter:
+    allowed_languages:
+      - "ru"
+      - "en"
+    # Для онлайн событий фильтруем только русский
+    online_only_languages:
+      - "ru"
+
+# Настройки Telegram парсинга
+telegram:
+  # Используем публичные каналы (через веб-интерфейс)
+  base_url: "https://t.me/s/"
+  # Селекторы для извлечения постов
+  post_selector: ".tgme_widget_message"
+  content_selector: ".tgme_widget_message_text"
+  time_selector: ".tgme_widget_message_time"
+  date_selector: ".tgme_widget_message_date"
+  
+  # Каналы для парсинга (будут загружаться из sources.json)
+  channels:
+    - "@bali_invest"
+    - "@terraauri"

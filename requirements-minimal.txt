@@ -1,0 +1,11 @@
+# Минимальные зависимости для работы бота
+httpx==0.27.0
+beautifulsoup4==4.12.3
+lxml==5.2.2
+python-telegram-bot==21.6
+telethon==1.36.0
+pyyaml==6.0.1
+python-dotenv==1.0.1
+apscheduler==3.10.4
+tenacity==9.0.0
+fake-useragent==1.5.1

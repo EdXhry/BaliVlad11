@@ -1,0 +1,300 @@
+[
+  {
+    "name": "Baliforum Events",
+    "type": "website",
+    "url": "https://baliforum.ru/events",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "BaliChat Event (TG)",
+    "type": "telegram",
+    "username": "balichat_event",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "10times Bali Business",
+    "type": "website",
+    "url": "https://10times.com/bali-id/business-consultancy",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "10times Bali All",
+    "type": "website",
+    "url": "https://10times.com/bali-id",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Allevents Denpasar Business",
+    "type": "website",
+    "url": "https://allevents.in/denpasar/business",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Allevents Ubud Business",
+    "type": "website",
+    "url": "https://allevents.in/ubud-id/business",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Eventbrite Bali Startups",
+    "type": "website",
+    "url": "https://www.eventbrite.com/d/indonesia--bali--85672023/startup-events/",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Eventbrite Canggu Networking",
+    "type": "website",
+    "url": "https://www.eventbrite.com/d/indonesia--canggu/business-networking/",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Meetup Canggu Networking",
+    "type": "website",
+    "url": "https://www.meetup.com/find/id--canggu/networking/",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Meetup Bali Entrepreneurs",
+    "type": "website",
+    "url": "https://www.meetup.com/find/?keywords=entrepreneur&location=ID--Bali",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Meetup Canggu Startups",
+    "type": "website",
+    "url": "https://www.meetup.com/find/?keywords=startup&location=ID--Canggu",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Amsterdam Founders Club Bali",
+    "type": "website",
+    "url": "https://amsterdamfoundersclub.com/bali-business-networking-events/",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Meetup Bali Startups Tech",
+    "type": "website",
+    "url": "https://www.meetup.com/bali-start-ups-tech-community/",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Meetup Entrepreneur Growth Bali",
+    "type": "website",
+    "url": "https://www.meetup.com/the-entrepreneur-growth-circle-bali/",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Startup Grind Bali",
+    "type": "website",
+    "url": "https://www.startupgrind.com/bali/",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Мероприятия на Бали (TG)",
+    "type": "telegram",
+    "username": "eventsbali",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Афиша мероприятий на Бали (TG)",
+    "type": "telegram",
+    "username": "balifm_afisha",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "BaliRadar Events (TG)",
+    "type": "telegram",
+    "username": "baliradar",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Bali Real Estate Chat (TG)",
+    "type": "telegram",
+    "username": "CHAT_BALI_REAL_ESTATE",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "Bali Чат Baliforum (TG)",
+    "type": "telegram",
+    "username": "balichat",
+    "enabled": true,
+    "geo": "bali"
+  },
+  {
+    "name": "10times South Africa Real Estate",
+    "type": "website",
+    "url": "https://10times.com/southafrica/real-estate",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "10times South Africa All",
+    "type": "website",
+    "url": "https://10times.com/southafrica",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "10times Johannesburg",
+    "type": "website",
+    "url": "https://10times.com/johannesburg-za",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Allevents Cape Town Business",
+    "type": "website",
+    "url": "https://allevents.in/cape-town/business",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Allevents Johannesburg Business",
+    "type": "website",
+    "url": "https://allevents.in/johannesburg/business",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Eventbrite Cape Town Business",
+    "type": "website",
+    "url": "https://www.eventbrite.com/b/south-africa--cape-town/business/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Eventbrite South Africa Business",
+    "type": "website",
+    "url": "https://www.eventbrite.com/b/south-africa/business/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "BizCommunity Events",
+    "type": "website",
+    "url": "https://www.bizcommunity.com/Events.aspx",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Quicket South Africa",
+    "type": "website",
+    "url": "https://www.quicket.co.za/events/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Property Wheel Events",
+    "type": "website",
+    "url": "https://propertywheel.co.za/events/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "API Events Africa",
+    "type": "website",
+    "url": "https://www.apievents.com/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "API Summit South Africa",
+    "type": "website",
+    "url": "https://www.apisummit.co.za/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "SAPOA Convention",
+    "type": "website",
+    "url": "https://sapoaconvention.co.za/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Disrupt Africa",
+    "type": "website",
+    "url": "https://disruptafrica.com/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Startup Club ZA",
+    "type": "website",
+    "url": "https://www.startupclubza.com/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Startup Grind Cape Town",
+    "type": "website",
+    "url": "https://www.meetup.com/startupgrindcpt/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Hostex",
+    "type": "website",
+    "url": "https://www.hostex.co.za/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "The Hotel Show Africa",
+    "type": "website",
+    "url": "https://www.thehotelshowafrica.com/",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Africa Newsroom (TG)",
+    "type": "telegram",
+    "username": "africa_newsroom",
+    "enabled": true,
+    "geo": "world"
+  },
+  {
+    "name": "Techbuild Africa (TG)",
+    "type": "telegram",
+    "username": "techbuildafrica",
+    "enabled": true,
+    "geo": "world"
+  },
+    {
+    "name": "бали3",
+    "type": "telegram",
+    "enabled": true,
+    "username": "balitest3"
+  },
+  {
+    "name": "бали2",
+    "type": "telegram",
+    "enabled": true,
+    "username": "balitest2"
+  },
+  {
+    "name": "бали1",
+    "type": "telegram",
+    "enabled": true,
+    "username": "bali1test"
+  }
+]

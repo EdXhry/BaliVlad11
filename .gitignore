@@ -1,0 +1,55 @@
+# Конфиденциальные данные — НИКОГДА не коммитить!
+.env
+*.env
+
+# Telegram сессия — содержит авторизацию аккаунта, не коммитить!
+*.session
+*.session-journal
+
+# Данные JSON-хранилища (генерируются автоматически)
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Логи
+*.log
+
+# БД
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Python packaging and distribution
+*.egg
+*.egg-info/
+dist/
+build/
+pyproject.toml.egg-info/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.hypothesis/
+
+# Development tools
+.pre-commit-config.yaml
+.mypy_cache/
+.vscode/
+.ipynb_checkpoints/
+
+# OS generated files
+.DS_Store
+Thumbs.db

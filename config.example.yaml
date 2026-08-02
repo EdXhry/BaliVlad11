@@ -1,0 +1,73 @@
+# Пример конфигурационного файла для Bali Events Aggregator
+# Все секретные значения должны быть заменены реальными значениями
+
+telegram:
+  bot_token: "BOT_TOKEN_HERE"          # Токен бота от BotFather
+  channel_id: "@bali_events"           # ID канала (например, @bali_events)
+  admin_user_id: 123456789            # ID администратора для уведомлений
+
+api:
+  token: "SECRET_API_TOKEN"           # Токен для HTTP API аутентификации
+  port: 8080                          # Порт для HTTP API сервера
+  host: "0.0.0.0"                     # Хост для HTTP API сервера
+
+scheduler:
+  collection:
+    schedule: "0 9 * * *"             # Cron: каждый день в 09:00
+    enabled: true
+  publication:
+    schedule: "0 18 * * *"            # Cron: каждый день в 18:00
+    enabled: true
+
+filters:
+  allowed_categories:                 # Разрешённые категории (пустой список = все)
+    - "music"                         # 🎵 Музыка
+    - "sport"                         # 🏃 Спорт
+    - "art"                           # 🎨 Искусство
+    - "education"                     # 📚 Образование
+  max_events_per_digest: 30           # Максимальное количество событий в подборке
+
+sources:
+  - name: "Bali Events Guide"
+    type: website                     # Тип источника: website, api, social
+    url: "https://balievents.com"
+    enabled: true
+    parsing_rules:
+      event_selector: ".event-card"
+      title_selector: "h2.event-title"
+      date_selector: ".event-date"
+      location_selector: ".event-venue"
+      description_selector: ".event-description"
+      price_selector: ".event-price"
+      link_selector: "a.event-link"
+    auth:                             # Конфигурация аутентификации (опционально)
+      type: "bearer"
+      token: "API_TOKEN_HERE"
+
+  - name: "Bali Tourism API"
+    type: api
+    url: "https://api.balitourism.com/events"
+    enabled: true
+    auth:
+      type: "api_key"
+      token: "API_KEY_HERE"
+
+  - name: "Bali Instagram Events"
+    type: social
+    url: "bali_events_insta"          # Идентификатор Instagram аккаунта
+    enabled: true
+
+database:
+  url: "sqlite:///events.db"          # URL базы данных (SQLite для разработки)
+  # Для PostgreSQL используйте: postgresql://user:password@localhost/events_db
+
+logging:
+  level: "INFO"                       # Уровень логирования: DEBUG, INFO, WARNING, ERROR
+  max_file_size_mb: 10                # Максимальный размер лог-файла в МБ
+  max_files: 10                       # Максимальное количество лог-файлов
+  file_path: "logs/bot_bali.log"      # Путь к файлу логов
+
+notifications:
+  telegram_on_error: true             # Отправлять уведомления в Telegram при ошибках
+  email_on_critical: false            # Отправлять email при критических ошибках
+  email_address: "admin@example.com"  # Email для уведомлений
